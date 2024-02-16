@@ -117,6 +117,11 @@ table {
   cursor: not-allowed !important;
 }
 
+/* For debugging purposes */
+.highlightBorder {
+  border: 2px solid red;
+}
+
 /* Default Styling for HTML elements */
 
 html {

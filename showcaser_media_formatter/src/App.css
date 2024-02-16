@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.App__PageList {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  width: calc(100vw - 150px)
+}

@@ -1,0 +1,9 @@
+.ClippingPage {
+    height: 100vh;
+    width: 100%;
+}
+
+.ClippingPage__HorizontalFlex {
+    display: flex;
+    flex-direction: row;
+}
