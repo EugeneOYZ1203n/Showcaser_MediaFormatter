@@ -1,0 +1,59 @@
+.JobListItem {
+    width: 100%;
+}
+
+.JobListItem__AccordionButton {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr fit-content(40%) 4em 30px;
+    grid-column-gap: 2px;
+
+    font-size: 14px;
+}
+
+.JobListItem__Title {
+    text-align: left;
+}
+
+.JobListItem__Status, .JobListItem__Progress {
+    text-align: right;
+}
+
+.JobListItem__SubJobList {
+    overflow: hidden;
+}
+
+.SubJobListItem {
+    height: 0;
+    padding: 0px 10px;
+    transition: all 0.3s;
+
+    border: none;
+    margin: 0px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 4em;
+    grid-column-gap: 2px;
+
+    font-size: 12px;
+}
+
+.SubJobListItem.show {
+    height: 2.5em;
+    padding: 0.5em 10px;
+    border: 2px solid var(--secondary-color);
+    margin: 6px 20px;
+    
+    transition: all 0.3s;
+}
+
+.SubJobListItem span:nth-of-type(1) {
+    text-align: left;
+}
+
+.SubJobListItem span:nth-of-type(2) {
+    text-align: right;
+}
+
+
