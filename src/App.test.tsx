@@ -7,7 +7,6 @@ describe('App', () => {
   it('Check for Sidebar', () => {
     render(<App />);
 
-    //@ts-ignore
     expect(screen.getByText("Sidebar")).toBeInTheDocument();
   });
 });
