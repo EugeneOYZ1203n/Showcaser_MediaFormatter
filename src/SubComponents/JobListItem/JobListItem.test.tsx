@@ -1,6 +1,8 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-import { describe, it, expect, beforeEach } from 'vitest'
+import { render, screen } from '@testing-library/react';
+import { describe, it, expect } from 'vitest'
 import JobListItem from './JobListItem';
+
+// Most tests here are not important and were for learning purposes only
 
 describe('JobListItem SubComponent', () => {
     //Checking job information displayed correctly
