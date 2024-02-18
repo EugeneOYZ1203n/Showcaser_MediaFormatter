@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
 import JobListItem from '../../SubComponents/JobListItem/JobListItem'
 import './JobsPage.css'
+import useCreateJob from './useCreateJob'
 
 function JobsPage() {
   /* 
@@ -20,13 +22,36 @@ function JobsPage() {
   
   */
 
-
-  
+  const [CreateJob, UpdateSubJob, ErrorSubJob, jobList, subjobList]  = useCreateJob();
 
   return (
     <>
        <div className='JobsPage highlightBorder'>
             <h1>Current Session Jobs</h1>
+
+            <button onClick={()=>{
+              const ids = CreateJob("Testting", ["Hello", "Hello2"])
+
+              setTimeout(() => {
+                console.log("Hello")
+                UpdateSubJob(ids[0], 20)
+              }, 1000);
+
+              setTimeout(() => {
+                console.log("Hello")
+                UpdateSubJob(ids[0], 100)
+              }, 3000);
+
+              setTimeout(() => {
+                console.log("Hello")
+                ErrorSubJob(ids[1])
+              }, 5000);
+            }}></button>
+
+            {Object.keys(jobList).map((jobTitle)=>(
+              <JobListItem title={jobTitle} subjobs={jobList[jobTitle].map((el) => subjobList[el])}/>
+            ))}
+
             <JobListItem title='Test' subjobs={[
               {title: "Sub Test 1", progress: 0},
               {title: "Sub Test 2", progress: 0},
@@ -41,7 +66,7 @@ function JobsPage() {
             <JobListItem title='Test' subjobs={[
               {title: "Sub Test 1", progress: 100},
               {title: "Sub Test 2", progress: 100},
-              {title: "Sub Test 3", progress: -1}
+              {title: "Sub Test 3", progress: 100}
             ]}/>
             <JobListItem title='Test' subjobs={[
               {title: "Sub Test 1", progress: 100},
@@ -50,7 +75,7 @@ function JobsPage() {
             ]}/>
             <JobListItem title='Test' subjobs={[
               {title: "Sub Test 1", progress: -1},
-              {title: "Sub Test 2", progress: -1},
+              {title: "Sub Test 2", progress: 100},
               {title: "Sub Test 3", progress: 100}
             ]}/>
             <JobListItem title='Test' subjobs={[
