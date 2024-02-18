@@ -1,7 +1,6 @@
 import './App.css'
 import ClippingPage from './Components/ClippingPage/ClippingPage'
 import FormattingPage from './Components/FormattingPage/FormattingPage'
-import JobsPage from './Components/JobsPage/JobsPage'
 import Sidebar from './Components/Sidebar/Sidebar'
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
         <div className='App__PageList'>
           <ClippingPage />  
           <FormattingPage />
-          <JobsPage />
         </div>
       </div>
     </>
