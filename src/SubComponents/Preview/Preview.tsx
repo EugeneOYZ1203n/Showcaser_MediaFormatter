@@ -1,11 +1,11 @@
-import './Preview.css'
+import "./Preview.css";
 
 function Preview() {
   return (
     <>
-       <div>Preview</div>
+      <div>Preview</div>
     </>
-  )
+  );
 }
 
-export default Preview
+export default Preview;
