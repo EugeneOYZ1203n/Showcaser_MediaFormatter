@@ -1,13 +1,15 @@
 import './UploadBox.css';
 import { Accept, useDropzone} from 'react-dropzone';
 import { useCallback } from 'react';
-/* 
-Features: 
-1. Given a onDropFunction to pass the files information to (name and path??)
-2. Given a storage location to save files on local filesystem?? Maybe just a context will do
-3. Given a list of file formats to accept
-4. Creates a dropzone for submitting files (Can handle multiple uploads)
+
+/* Example onDropFunction
+
+const onDrop = useCallback((acceptedFiles: File[]) =>{
+  console.log(acceptedFiles.map(file=>file.path))
+}, [])
+
 */
+
 
 const defaultAcceptedTypes = {
   'image/png': ['.png'],
