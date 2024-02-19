@@ -1,8 +1,99 @@
-.Sidebar {
-  height: 100vh;
-  width: 150px;
 
-  position: fixed;
-  top: 0;
-  left: 0;
+.Sidebar {
+    height: 100vh;
+    /* width: 150px; */
+    /* overflow: hidden; */
+    width: fit-content;
+    /* max-width: 0; */
+    position: fixed;
+    top: 0;
+    left: 0;
 }
+
+.SidebarMenuIconWrap{
+    height:40px;
+    width:40px; margin:10px;
+    border-radius: 1000000px;
+    transition: width 0.2s ease, background-color 0.5s ease;;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: var(--secondary-color);
+    outline: 1px solid white;
+    /* overflow: hidden; */
+    
+
+
+}
+
+.SidebarMenuIcon{
+    height:40px;
+    width:40px; 
+    /* background-color: white; */
+    border-radius: 20px;
+    float: left;
+    transition: width 0.2s ease;
+    outline: -1px solid white;
+}
+
+
+
+
+.iconText {
+    display: none;
+    color:white;
+    padding-top: 11px;
+    padding-right: 10px;
+}
+
+
+.SidebarMenuIconWrap:hover{
+    width:120px;
+    /* float: left; */
+    transition: width 0.2s ease;
+    overflow: hidden;
+    /* border: 1px solid white; */
+}
+/* .SidebarMenuIconWrap.SidebarMenuIconWrap--toggled:hover {
+    width:110px; 
+    border-radius: 20px;
+    float: left;
+    transition: width 0.2s ease;
+    outline: -1px solid white;
+  } */
+
+.SidebarMenuIconWrap:hover .iconText {
+    display: block;
+}
+
+.SidebarMenuIconWrap:active {
+    filter: brightness(80%);
+    background-color: aliceblue;
+}
+.SidebarMenuIconWrap:active .iconText{
+    color: var(--secondary-color)
+    
+}
+.SidebarMenuIconWrap:active .SidebarMenuIcon{
+    background-color: var(--secondary-color);
+    
+}
+
+.iconText--toggled{
+    color: var(--secondary-color);
+    display: block;
+}
+
+.SidebarMenuIcon--toggled{
+    background-color: var(--secondary-color);
+
+}
+
+.SidebarMenuIconWrap--toggled{
+
+    background-color: whitesmoke;
+    width:110px;
+}
+
+
+
