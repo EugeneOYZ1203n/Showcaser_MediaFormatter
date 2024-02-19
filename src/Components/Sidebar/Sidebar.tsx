@@ -21,7 +21,7 @@ function Sidebar() {
       <NavigationBubble toggle={toggle} currentPage={currentPage} setCurrentPage={setCurrentPage} page='Jobs'/>
       </div>
     </>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;

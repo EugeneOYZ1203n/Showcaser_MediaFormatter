@@ -8,5 +8,5 @@
   display: flex;
   flex-direction: column;
   margin-left: 150px;
-  width: calc(100vw - 150px)
+  width: calc(100vw - 150px);
 }
