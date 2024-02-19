@@ -1,11 +1,11 @@
-import './UploadBox.css'
+import "./UploadBox.css";
 
 function UploadBox() {
   return (
     <>
-       <div>UploadBox</div>
+      <div>UploadBox</div>
     </>
-  )
+  );
 }
 
-export default UploadBox
+export default UploadBox;

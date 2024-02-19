@@ -1,0 +1,119 @@
+.JobListItem {
+  width: 100%;
+  margin-top: 10px;
+
+  /* Changed by code */
+  --main-color: var(--secondary-color);
+}
+
+.JobListItem__AccordionButton {
+  border: 2px solid var(--main-color);
+  background-color: transparent;
+
+  position: relative;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr fit-content(40%) 4em 30px;
+  grid-column-gap: 2px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.JobListItem__AccordionButton:hover {
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
+}
+
+.JobListItem__Title {
+  text-align: left;
+}
+
+.JobListItem__Status,
+.JobListItem__Progress {
+  text-align: right;
+}
+
+/* Sub Job List Item */
+
+.JobListItem__SubJobList {
+  overflow: hidden;
+}
+
+.SubJobListItem {
+  height: 0;
+  padding: 0px 10px;
+  transition: all 0.3s;
+
+  position: relative;
+
+  border: none;
+  margin: 0px 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 4em;
+  grid-column-gap: 2px;
+
+  font-size: 12px;
+}
+
+.SubJobListItem.show {
+  height: 2.5em;
+  padding: 0.5em 10px;
+  border: 2px solid var(--main-color);
+  margin: 6px 20px;
+
+  transition: all 0.3s;
+}
+
+.SubJobListItem.show:hover {
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
+}
+
+.SubJobListItem span:nth-of-type(1) {
+  text-align: left;
+}
+
+.SubJobListItem span:nth-of-type(2) {
+  text-align: right;
+}
+
+/* Progress Bars */
+
+.JobListItem__ProgressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+
+  /* Changed by Code */
+  width: 100%;
+  background-color: color-mix(
+    in srgb,
+    var(--main-color) 60%,
+    var(--background-color)
+  );
+  transition: all 0.4s;
+}
+
+.SubJobListItem__ProgressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -2;
+
+  /* Changed by Code */
+  width: 100%;
+  background-color: color-mix(
+    in srgb,
+    var(--main-color) 60%,
+    var(--background-color)
+  );
+
+  transition: all 0.4s;
+}

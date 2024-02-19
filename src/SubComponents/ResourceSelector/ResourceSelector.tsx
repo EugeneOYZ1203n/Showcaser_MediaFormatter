@@ -1,11 +1,11 @@
-import './ResourceSelector.css'
+import "./ResourceSelector.css";
 
 function ResourceSelector() {
   return (
     <>
-       <div>ResourceSelector</div>
+      <div>ResourceSelector</div>
     </>
-  )
+  );
 }
 
-export default ResourceSelector
+export default ResourceSelector;

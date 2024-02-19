@@ -7,7 +7,7 @@ function Preview() {
        <div>Preview</div>
        <UploadBox />
     </>
-  )
+  );
 }
 
-export default Preview
+export default Preview;

@@ -1,13 +1,11 @@
-import './Sidebar.css'
+import "./Sidebar.css";
 
 function Sidebar() {
   return (
     <>
-       <div className='Sidebar highlightBorder'>
-        Sidebar
-        </div>
+      <div className="Sidebar highlightBorder">Sidebar</div>
     </>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;
