@@ -17,6 +17,7 @@ const MenuIcon: React.FC<Props> = ({ toggle, menuClick }) => {
     return (
         <>
             <div className={`SidebarMenuIconWrap ${toggle ? 'SidebarMenuIconWrap--toggled' : ''}`} onClick={menuClick}>
+                {/*@ts-ignore */}
                 <svg fill='white' className={`SidebarMenuIcon ${toggle ? 'SidebarMenuIcon--toggled' : ''}`} version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                     viewBox="0 0 56 56" xml:space="preserve">
                 <path d="M28,0C12.561,0,0,12.561,0,28s12.561,28,28,28s28-12.561,28-28S43.439,0,28,0z M40,41H16c-1.104,0-2-0.896-2-2s0.896-2,2-2
