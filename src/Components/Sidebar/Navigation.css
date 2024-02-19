@@ -1,0 +1,85 @@
+
+.NavIconWrap{
+    position: relative;
+    height:40px;
+    width:40px; margin:10px;
+    border-radius: 1000000px;
+    transition: width 0.2s ease;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: var(--secondary-color);
+    outline: 1px solid white;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.5s ease, width 0.2s ease;;
+    transform: translateX(-100%);
+    
+}
+
+.NavIcon{
+    height:40px;
+    width:40px; 
+    padding: 5px;
+    border-radius: 20px;
+    float: left;
+    transition: width 0.2s ease;
+    outline: -1px solid white;
+    
+}
+
+.NavIconWrap--toggled{
+    opacity: 1;
+    display: block;
+    transform: translateX(0);
+}
+
+
+#Clipping:hover , #Format:hover, #Jobs:hover{
+    width:120px;
+    transition: width 0.2s ease;
+    overflow: hidden;
+}
+
+.NavText {
+    display: none;
+    color:white;
+    padding-top: 11px;
+    padding-right: 10px;
+}
+
+#Clipping:hover .NavText , #Format:hover .NavText, #Jobs:hover .NavText{
+    display: block;
+}
+
+.NavIconWrap:active {
+    filter: brightness(80%);
+    background-color: white;
+}
+
+.NavIconWrap:active .NavText{
+    color: var(--secondary-color)
+    
+}
+.NavIconWrap:active .NavIcon{
+    background-color: var(--secondary-color);
+}
+    
+
+
+
+.currentPageText{
+    color: var(--secondary-color);
+    display: block;
+}
+
+.currentPageIcon{
+    background-color: var(--secondary-color);
+
+}
+
+.currentPageWrap{
+
+    background-color: whitesmoke;
+    width:110px;
+}
